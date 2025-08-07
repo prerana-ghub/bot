@@ -1,6 +1,6 @@
 # Chatbot
 This guide walks through the steps to create, configure, and deploy a chatbot using Botpress Cloud with final integration into a static HTML page using Visual Studio Code.
-<br>
+<br><br>
 ✅ **Step 1: Create and Configure the Bot in Botpress**
 <br>
 - Go to Botpress Cloud and sign in using GitHub or another method.
@@ -14,8 +14,7 @@ This guide walks through the steps to create, configure, and deploy a chatbot us
   - Add flows, nodes, Q&A, and actions as needed.
     <br>
   - Test it using the in-browser emulator.
-<br>
-<br>
+<br><br>
 ✅ **Step 2: Enable Webchat Channel**
 <br>
 - In the Botpress Cloud dashboard, open your bot.
