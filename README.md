@@ -42,14 +42,5 @@
    - Open folder in **VS Code**, right-click `bot.html` and select **"Open with Live Server"**. <br>
    - Or click the **"Go Live"** button at the bottom of VS Code. <br>
 
-   👉 One-line version:  
-   **Click the "Go Live" button in VS Code to preview your bot instantly.**
+ 
 
-## ✅ Output
-
-When you run the file, the **Botpress chat widget** appears at the bottom-right corner of your webpage, fully functional and interactive. <br>
-
-## 📦 Tech Stack
-- **Botpress Cloud** (for chatbot creation) <br>
-- **HTML** (to embed the chatbot) <br>
-- **Live Server** extension in VS Code (for local deployment) <br>
