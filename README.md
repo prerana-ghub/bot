@@ -1,27 +1,55 @@
-# Chatbot
-This guide walks through the steps to create, configure, and deploy a chatbot using Botpress Cloud with final integration into a static HTML page using Visual Studio Code.
-<br><br>
-Step 1: Create and Configure the Bot in Botpress
-<br>
-- Go to Botpress Cloud and sign in using GitHub or another method.<br>
-- Click on “Create Bot”.<br>
-- Name your bot and choose a blank or starter template.<br>
-- Use the Botpress Studio to design your bot:<br>
-  - Add flows, nodes, Q&A, and actions as needed.<br>
-  - Test it using the in-browser emulator.
-<br><br>
-Step 2: Enable Webchat Channel
-<br>
-- In the Botpress Cloud dashboard, open your bot.<br>
-- Go to "Channels" → Select "Webchat".<br>
-- Toggle "Enable Webchat".<br>
-- Copy the <script> tags shown under "Installation"; you’ll embed these in your HTML file.
-<br><br>
-Step 3: Create an HTML File to Embed the Bot
-<br>
-- Open Visual Studio Code (VSC).<br>
-- Create a file named "bot.html".<br>
-- Paste the Webchat embed code inside the <body> tag.<br>
-- Use the "Live Server" extension in VSC to preview the bot:<br>
-  - Right-click the HTML file → Click "Go Live”.<br>
-  - Your bot will appear on the page.<br>
+# 🤖 My Gatchat - College Chatbot using Botpress
+
+## 🔧 Steps to Setup & Deploy
+
+1. **Create an Account on Botpress**
+   - Go to [Botpress](https://botpress.cloud) and sign up or log in using GitHub. <br>
+   - Once logged in, create a new bot. <br>
+
+2. **Design Your Bot**
+   - Use the **Botpress flow editor** to add nodes, questions, and conditional logic. <br>
+   - Save your progress regularly. <br>
+
+3. **Configure Webchat Integration**
+   - Click on the **Webchat** option on the left panel. <br>
+   - Scroll down and copy the two script tags:
+     ```html
+     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+     <script src="https://files.bpcontent.cloud/2025/01/20/12/20250120122152-310RUKNC.js"></script>
+     ```
+   - Replace the second script’s URL with the one given for **your** bot if different. <br>
+
+4. **Create the HTML File**
+   - Make a file called `bot.html` and paste the above two scripts inside `<body>`. <br>
+   - Example structure:
+     ```html
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>My Gatchat Bot</title>
+     </head>
+     <body>
+         <h1>Welcome to My Gatchat!</h1>
+         <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+         <script src="https://files.bpcontent.cloud/2025/01/20/12/20250120122152-310RUKNC.js"></script>
+     </body>
+     </html>
+     ```
+
+5. **Run it using Live Server**
+   - Open folder in **VS Code**, right-click `bot.html` and select **"Open with Live Server"**. <br>
+   - Or click the **"Go Live"** button at the bottom of VS Code. <br>
+
+   👉 One-line version:  
+   **Click the "Go Live" button in VS Code to preview your bot instantly.**
+
+## ✅ Output
+
+When you run the file, the **Botpress chat widget** appears at the bottom-right corner of your webpage, fully functional and interactive. <br>
+
+## 📦 Tech Stack
+- **Botpress Cloud** (for chatbot creation) <br>
+- **HTML** (to embed the chatbot) <br>
+- **Live Server** extension in VS Code (for local deployment) <br>
