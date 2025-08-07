@@ -1,4 +1,4 @@
-# 🤖 My Gatchat - College Chatbot using Botpress
+# 🤖 My gatchat - College Chatbot using Botpress
 
 ## 🔧 Steps to Setup & Deploy
 
